@@ -1,0 +1,15 @@
+# TCP/IP
+
+## IP
+Internet Protocol address are numbers that computers use to identify each other on the internet.
+### IPv4
+- 216.146.46.10
+- 4 billion unique IP addresses
+
+### IPv6
+- 39 digits long 
+
+## Packet
+A packet has two parts. The header contains information that helps the packet get to its destination, including the length of the packet, its source and destination, and a checksum value that helps the recipient detect if a packet was damaged in transit. After the header comes the actual data. A packet can contain up to 64 kilobytes of data, which is roughly 20 pages of plain text.
+
+If internet routers experience congestion or other technical problems, they are allowed to deal with it by simply discarding packets. It’s the sending computer’s responsibility to detect that a packet didn’t reach its destination and send another copy. 
