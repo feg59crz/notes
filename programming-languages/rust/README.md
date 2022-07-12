@@ -9,9 +9,9 @@
 
 
 ## Rust Rote
-- [Intro](./intro.md)
+- [Intro](./intro.md) (Basics)
   - [hello-world](./hello-world.md)
-  - [hello-cargo](./hello-cargo.md)
+  - [hello-cargo](./hello-cargo.md) (Introduction to Cargo)
 
 ## Code
 - [Rust "Hello, World"](./hello-world.md)
