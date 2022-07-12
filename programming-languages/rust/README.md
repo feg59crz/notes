@@ -1,10 +1,16 @@
 # Rust Programming Language
 
-```
+```bash
+ __________________________
+< Hello fellow Rustacean! >
+ --------------------------
+        \
+         \
             _~^~^~_
         \) /  o o  \ (/
           '_   -   _'
           / '-----' \
+# Source: https://github.com/mgattozzi/ferris-says
 ```
 
 
