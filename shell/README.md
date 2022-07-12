@@ -3,7 +3,7 @@
 ## What is the shell?
 The shell is basically a program that takes your commands from the keyboard and sends them to the operating system to perform
 ## Bash
-- `echo`, `pwd`, `touch`
+- `echo`, `pwd`, `touch`, `cat`
 - `cd`
     - `cd .` / `cd ..` / `cd ~`
     - `cd -` -> previous directory you were just at.
