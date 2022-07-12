@@ -1,0 +1,4 @@
+- `<em></em>` emphasize
+- `<strong></strong>` forte
+- `<p></p>` paragraph
+- `<a href="" target="">` hyperlink

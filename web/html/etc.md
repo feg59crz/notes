@@ -1,0 +1,1 @@
+- Empty elements -> single tag elements
