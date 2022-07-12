@@ -1,2 +1,0 @@
-# Bash
-Bash specific content.
