@@ -19,5 +19,6 @@
   - [hello-world](./hello-world.md)
   - [hello-cargo](./hello-cargo.md) (Introduction to Cargo)
 
-## Code
-- [Rust "Hello, World"](./hello-world.md)
+## Code Examples
+
+## Projects
