@@ -7,3 +7,6 @@ fn main() {
 
 - `fn main() {}` -> main function
 - `println!();` -> rust macro
+
+## Github
+https://github.com/feg59crz/rust-hello-world

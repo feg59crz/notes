@@ -18,3 +18,6 @@ $ cd hello_cargo
 - `cargo run` -> build(if not) & run
 - `cargo check` -> fast checkup
 - `cargo build --release` -> build with optimizations
+
+## Github
+https://github.com/feg59crz/rust-hello-cargo
