@@ -5,7 +5,7 @@ $ cargo new hello_cargo
 $ cd hello_cargo
 ````
 
-- generate a git repository
+- generates a git repository
 - generates a `src` folder with the `main.rs` file
 - generates a file `Cargo.toml`
 
