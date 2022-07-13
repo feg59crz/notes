@@ -11,6 +11,8 @@ Contains information such as the page, links to CSS (if you choose to style your
 Contains **metadata** about the document.
 
 ## Elements
+- `<html></html>`
+    - `<html lang="pt-BR">` -> ISO 639-1
 - `<title></title>`
 - `<meta>`
     - `<meta charset="utf-8">` -> document's character encoding
@@ -28,6 +30,7 @@ Contains **metadata** about the document.
 - `<script></script>`
     - `<script src="main.js" defer></script>`
         - `defer` to load the JavaScript after the page has finished parsing the HTML.
-        
+
+[meta-example](https://github.com/feg59crz/meta-example) (github)
 
     
