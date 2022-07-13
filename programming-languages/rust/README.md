@@ -18,6 +18,8 @@
 - [Intro](./intro.md) (Basics)
   - [hello-world](./hello-world.md)
   - [hello-cargo](./hello-cargo.md) (Introduction to Cargo)
+  - [guessing-game](./guessing-game.md)
+  
 
 ## Code Examples
 
