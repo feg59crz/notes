@@ -2,6 +2,7 @@
 
 ## Notes
 - [html](./html.md)
+    - [beginner html site](https://github.com/feg59crz/beginner-html-site-scripted) (github)
 - [head](./head.md)
 
 
