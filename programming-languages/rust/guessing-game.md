@@ -1,7 +1,10 @@
 # Making a Guessing Game
 `let`, `match`, methods, associated functions using external crates and more.
-
-## 1_ver
+- [ver_1](#ver1)
+- [ver_2](#ver2)
+- [ver_3](#ver3)
+- [ver_4](#ver4)
+## ver_1
 - ask user for input
 - process that input
 - check if the input is in the expected form.
@@ -53,7 +56,7 @@ fn main() {
 - `println!("x = {} and y = {}", x, y);`
     - `{}` - placeholders
 
-## 2_ver
+## ver_2
 ### Dependencies
 ```toml
 # ./Cargo.toml
@@ -98,5 +101,98 @@ fn main() {
 - `gen_range`
     - method that takes a range expression as an argument and generates a random number in the range.
 - `start..=end`
+
+## ver_3
+```rust
+// Error on mismatched type
+use std::cmp::Ordering;
+fn main(){
+    // snip
+    println!("You guessed: {guess}");
+
+    match guess.cmp(&secret_number) {
+        Ordering::Less => println!("Too small!"),
+        Ordering::Greater => println!("Too big!"),
+        Ordering::Equal => println!("You win!"),
+}
+```
+- `use std::cmp::Ordering;`
+    - bring type `std::cmp::Ordering` to scope
+    - `Ordering`
+        - enum
+        - `Less`, `Greater`, `Equal`
+    - `.cmp()` 
+        - compare two values
+        - returns a variant of `Ordering` enum
+    - `match {}`
+        - to decide what to do based on which variant of `Ordering` was returned from the `cmp`.
+        - made up of _arms_ (patterns to match against, and the code that should be run if the value given to match fits that arm's pattern).
+
+mismatched type error -> `guess` is a String type
+### Convertion
+```rust
+let guess: u32 = guess.trim().parse().expect("Please type a number!");
+```
+- `trim` -> remove whitespaces
+- `parse` -> converts a String to another type (let guess: u32)
+
+## Ver_4
+
+### input loop
+```rust
+    // --snip--
+
+    println!("The secret number is: {secret_number}");
+
+    loop {
+        println!("Please input your guess.");
+
+        // --snip--
+
+        match guess.cmp(&secret_number) {
+            Ordering::Less => println!("Too small!"),
+            Ordering::Greater => println!("Too big!"),
+            Ordering::Equal => println!("You win!"),
+        }
+    }
+}
+
+```
+
+### Quit after correct guess
+```rust
+        // --snip--
+
+        match guess.cmp(&secret_number) {
+            Ordering::Less => println!("Too small!"),
+            Ordering::Greater => println!("Too big!"),
+            Ordering::Equal => {
+                println!("You win!");
+                break;
+            }
+        }
+    }
+}
+```
+
+### Handling invalid input
+```rust
+// --snip--
+
+        io::stdin()
+            .read_line(&mut guess)
+            .expect("Failed to read line");
+
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
+
+        println!("You guessed: {guess}");
+
+        // --snip--
+```
+
+
 ## Final
 - [guessing game](https://github.com/feg59crz/rust-guessing-game) (github repo)
