@@ -85,7 +85,7 @@ println!("You guessed: {guess}");
 - handle user input
 
 - `.read_line()`
-
+nt t
 - call read_line method to get input form user.
 
 - `&`

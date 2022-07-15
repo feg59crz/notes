@@ -5,6 +5,4 @@
 - [[books/The Rust Programming Language/hello-world|hello-world]]
 - [[books/The Rust Programming Language/hello-cargo|hello-cargo]]
 - [[books/The Rust Programming Language/guessing-game|guessing-game]]
-### Common Programming Concepts
-- [[books/The Rust Programming Language/variables and mutability|variables and mutability]]
-- 
+### [[Common Programming Concepts]]
