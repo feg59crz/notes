@@ -1,5 +1,5 @@
 # Hypertext Markup Language
-or [[HTML]]. Is a markup language that tells web browsers how to structure the web pages you visit.
+or [[Notes/Web/HTML]]. Is a markup language that tells web browsers how to structure the web pages you visit.
 
 
 ## Notes
